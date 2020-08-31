@@ -1,0 +1,75 @@
+header{
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header p{
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+    font-style: oblique;
+}
+
+header img{
+    width: 200px;
+}
+
+.meme-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding: 40px 0;
+}
+
+.meme-form input[type="text"]{
+    width: 20%;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.meme-form button{
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    border: none;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 350ms ease-in-out;
+}
+
+.meme-form button:hover{
+    background-color: rgb(75, 0, 75);
+    transform: scale(1.1);
+}
+
+.meme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 350px;
+}
+
+.meme img{
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+
+.meme .top,.bottom{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
